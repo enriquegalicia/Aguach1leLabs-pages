@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WanderClue — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 1em; }
+  a { color: #3DAA6E; }
+</style>
+</head>
+<body>
+<h1>WanderClue — Privacy Policy</h1>
+<p><em>Last updated: 28 September 2026</em></p>
+
+<p>Your quests, your progress, and your journal are stored only on your device, using Apple's on-device SwiftData and standard iOS storage. Aguach1leLabs does not operate a server, and there is no account or login — we never receive or store your data.</p>
+
+<h2>Location</h2>
+<p>WanderClue asks for your location only while the app is open ("When In Use"), and uses it for one thing: measuring how far you are from the next stop on a quest, so it knows when you've arrived. Your location is read on your device and never transmitted anywhere — not to us, not to anyone else. It is not saved between sessions, and no history of where you have been is kept. The app never requests background or "Always" location access. If you decline the permission, every quest is still fully playable using the "Reveal without walking" button on each stop.</p>
+
+<h2>Building a quest where you are</h2>
+<p>The "Build a quest around me" feature finds nearby places using Apple Maps, which is handled by iOS itself under Apple's own privacy terms. WanderClue then writes the story and the puzzles in one of three ways, in this order:</p>
+<ul>
+  <li><strong>Your own OpenAI key, if you added one.</strong> WanderClue sends the <em>names</em> of the chosen places, their street names, and a city label directly from your device to OpenAI (standard HTTPS). Your coordinates are not sent. This happens only when you tap to build a quest, under your own key, and is subject to OpenAI's own privacy policy — the request never passes through Aguach1leLabs. Your key is stored only in this device's Keychain and you can remove it at any time in Settings.</li>
+  <li><strong>Apple Intelligence, on your iPhone.</strong> On supported devices with Apple Intelligence turned on, the quest is written by Apple's on-device model. Nothing leaves your phone.</li>
+  <li><strong>Built-in templates.</strong> With neither available, WanderClue builds simple observation puzzles itself, entirely on your device.</li>
+</ul>
+<p>The two built-in quests, and playing any quest, make no network calls at all.</p>
+
+<h2>Sending a quest to someone</h2>
+<p>You can send a quest to another person as a <code>.wanderclue</code> file, using AirDrop, Messages, Mail or any other share option you choose. The file contains the quest itself — its title, the places and their coordinates, the story, the puzzles and their answers — and nothing about you, your location, or your progress. It goes only where you send it; Aguach1leLabs never sees it.</p>
+
+<h2>Game Center</h2>
+<p>If you are signed in to Game Center, WanderClue posts two numbers to Apple's leaderboards after each finished quest: your lifetime points and how many stops you have reached on foot. Game Center is operated by Apple under Apple's privacy policy; Aguach1leLabs receives nothing from it. WanderClue works exactly the same if you are not signed in.</p>
+
+<h2>Sharing your score</h2>
+<p>The "Share your score" button creates an image on your device (quest title, city, score, stops). It is only shared if you choose where to send it.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No analytics or crash-reporting SDKs</li>
+  <li>No advertising or ad networks</li>
+  <li>No tracking across other companies' apps or websites</li>
+  <li>No accounts, no sign-up, no email collection</li>
+  <li>No network access of our own — the only outbound requests are Apple Maps, Game Center (if you're signed in), and the OpenAI request described above, only under your own key and only when you choose to build a quest</li>
+</ul>
+
+<h2>Children's privacy</h2>
+<p>WanderClue is rated for general audiences and does not knowingly collect information from anyone, of any age. It does direct people to walk to public places — children should play with an adult.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this URL with a new "last updated" date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a></p>
+
+<footer>Aguach1leLabs · <a href="support.html">Support</a></footer>
+</body>
+</html>
