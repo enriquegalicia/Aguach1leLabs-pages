@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventureo — Privacy Policy</title>
+<style>
+  /* Ventureo's own page style (2026-10-19): slate paper, amber ink, not the shared template. */
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 36px 20px 56px; line-height: 1.6; color: #1E242B; background: #F2F4F6; }
+  h1 { font-size: 1.8em; font-weight: 800; margin: 0 0 0.2em; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05em; font-weight: 800; margin-top: 1.9em; color: #9A5F07; text-transform: uppercase; letter-spacing: 0.04em; }
+  p, li { color: #38414B; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  li::marker { color: #C27C0E; }
+  strong { color: #1E242B; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #6B7581; border-top: 1px solid #D5DAE0; padding-top: 1em; }
+  a { color: #9A5F07; }
+</style>
+</head>
+<body>
+<h1>Ventureo — Privacy Policy</h1>
+<p><em>Last updated: October 2026</em></p>
+
+<p>Ventureo is a personal CRM for the people you meet at events. Aguach1leLabs does not operate a server for it, there is no Ventureo account or login, and we never receive or store your data. Your workspaces, events, contacts, notes, lead scores and business-card photos are stored on your device, using Apple's on-device SwiftData framework. They leave your device only in the ways described below, and only when you set them up.</p>
+
+<h2>Your Google Sheet</h2>
+<p>If you connect a workspace to a Google Sheet, Ventureo sends that workspace's events and contacts to the Apps Script web app you deployed in your own Google account, and reads them back from it. That data is held by Google under your Google account and Google's terms. Aguach1leLabs has no access to your Sheet, your script or your sync token.</p>
+
+<h2>Business cards</h2>
+<p>When you photograph a business card, Ventureo reads it <strong>on your device</strong> with Apple's Vision framework. Nothing is sent anywhere. The photo is kept inside the app with that contact, and deleted when you delete the contact.</p>
+<p>Only if you add your own OpenAI API key <em>and</em> say yes when Ventureo asks whether contact data may go to OpenAI, a card photo can be sent from your device to OpenAI to read it more accurately. You can change that answer in Settings at any time.</p>
+
+<h2>Follow-up drafts</h2>
+<p>On iPhones with Apple Intelligence, follow-up messages are drafted by Apple's on-device model. Otherwise Ventureo writes a plain draft from a template, on the device. If you added an OpenAI key and agreed to send contact data, Ventureo may instead send the contact's name, role, company, the event, your topics and your notes to OpenAI to draft the message, under your own key and OpenAI's privacy policy.</p>
+
+<h2>Sending, sharing and reminders</h2>
+<ul>
+  <li>A follow-up goes out only when you send it yourself, through Mail, Messages or the share sheet.</li>
+  <li>Tapping a contact's LinkedIn link opens it in your browser or the LinkedIn app, like any link.</li>
+  <li>Follow-up reminders are local notifications scheduled on your iPhone. Nothing is sent to us.</li>
+</ul>
+
+<h2>Keys and tokens</h2>
+<p>Your OpenAI key and each workspace's sync token are stored in your device's Keychain. They are sent only to OpenAI and to your own script respectively.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No analytics or crash-reporting SDKs</li>
+  <li>No advertising or ad networks</li>
+  <li>No tracking across other companies' apps or websites</li>
+  <li>No accounts, no sign-up, no email collection</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Deleting a contact or event removes it from your device. Rows already in your Google Sheet stay there until you delete them. Deleting the app removes everything stored on the device.</p>
+
+<h2>Children's privacy</h2>
+<p>Ventureo is not directed at children and does not knowingly collect information from anyone.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this URL with a new "last updated" date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a></p>
+
+<footer>Aguach1leLabs · <a href="support.html">Support</a> · <a href="marketing.html">About Ventureo</a></footer>
+</body>
+</html>

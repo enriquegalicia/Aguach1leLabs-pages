@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PostLeap — Support</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; }
+  ul, ol { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  code { font-size: 0.9em; background: #f4f4f4; padding: 1px 4px; border-radius: 3px; }
+  .tagline { font-size: 1.1em; color: #444; margin-top: 0; }
+  .closing { margin-top: 1.8em; font-style: italic; color: #444; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 1em; }
+  a { color: #D94040; }
+</style>
+</head>
+<body>
+<h1>PostLeap — Support</h1>
+
+<p>Need help with PostLeap? Email <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a> and I'll get back to you.</p>
+
+<h2>How do I connect a Google Sheet?</h2>
+<p>In PostLeap, open <strong>Settings → Sync → Set up your Sheet</strong>. It walks you through the whole setup, and it's easiest on a computer:</p>
+<ol>
+  <li>Create a Google Sheet with three tabs: <strong>Posts</strong>, <strong>Guidelines</strong> and <strong>Graphics</strong>. The app copies each tab's header row for you.</li>
+  <li>In the Sheet, open <strong>Extensions → Apps Script</strong> and paste in the PostLeap script. Tap <strong>Send script to your computer</strong> in the app to email or AirDrop it to yourself.</li>
+  <li>Choose <code>setup</code> in the function menu and press <strong>Run</strong>. Google asks you to authorize it, because it's your own script in your own account. The log shows your sync token.</li>
+  <li><strong>Deploy → New deployment → Web app</strong>, with Execute as: <em>Me</em> and Who has access: <em>Anyone</em>. Copy the Web app URL (it ends in <code>/exec</code>).</li>
+  <li>Back in PostLeap, paste the URL and the token under <strong>Settings → Sync</strong>, tap <strong>Save</strong>, then pull down on the Calendar to sync.</li>
+</ol>
+
+<h2>Why does the script need access set to "Anyone"?</h2>
+<p>That's what lets your phone reach it. Every request must also carry your sync token, and the script refuses anything without it, so the URL on its own is useless to anyone else. Keep the token private, like a password.</p>
+
+<h2>"The sync token was rejected"</h2>
+<p>The token in Settings → Sync doesn't match the one your script generated. Run <code>setup</code> again in Apps Script (it keeps the same token) and copy it from the log.</p>
+
+<h2>"Couldn't read the Sheet's response" or "check that its tabs and headers match"</h2>
+<p>A tab name or header is spelled differently from the setup guide. Names must match exactly, but column order doesn't matter. If you changed the script, use <strong>Deploy → Manage deployments → Edit → New version</strong> so the same URL serves the new code.</p>
+
+<h2>I deleted something and it came back</h2>
+<p>Don't delete rows in the Sheet. Tick <strong>Archived</strong> instead. Swiping a post or guideline away in PostLeap does the same thing. If your Sheet was set up before September 2026, add an <strong>Archived</strong> column to the Guidelines and Graphics tabs and run <code>setup</code> once more.</p>
+
+<h2>A teammate's change isn't showing up</h2>
+<p>Pull down on the Calendar to sync. When the same post changed on both sides, the newer edit wins for the whole row. Changes made by Make or other automations must also set the <code>UpdatedAt</code> column, or PostLeap won't notice them.</p>
+
+<h2>Does AI drafting need a key?</h2>
+<p>Yes. Paste your own OpenAI key under <strong>Settings → AI</strong>. It's stored in your iPhone's Keychain and sent only to OpenAI. Without a key, everything else still works: accounts, the calendar, guidelines and sync.</p>
+
+<h2>Does PostLeap post to Instagram, LinkedIn or X?</h2>
+<p>No. PostLeap drafts, approves and schedules. Publishing happens from your Sheet, for example with a Make scenario that posts rows marked Approved.</p>
+
+<h2>Something's not working</h2>
+<p>Email a description of what happened (and a screenshot if you can) to <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a>, and include your iOS version. Please never send your sync token or OpenAI key.</p>
+
+<footer>Aguach1leLabs · <a href="privacy.html">Privacy Policy</a></footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventureo — Support</title>
+<style>
+  /* Ventureo's own page style (2026-10-19): slate paper, amber ink, not the shared template. */
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 36px 20px 56px; line-height: 1.6; color: #1E242B; background: #F2F4F6; }
+  h1 { font-size: 1.8em; font-weight: 800; margin: 0 0 0.2em; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05em; font-weight: 800; margin-top: 1.9em; color: #9A5F07; }
+  p, li { color: #38414B; }
+  ol, ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  li::marker { color: #C27C0E; }
+  strong { color: #1E242B; }
+  code { font-size: 0.9em; background: #E3E7EB; padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #6B7581; border-top: 1px solid #D5DAE0; padding-top: 1em; }
+  a { color: #9A5F07; }
+</style>
+</head>
+<body>
+<h1>Ventureo — Support</h1>
+
+<p>Need help with Ventureo? Email <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a> and I'll get back to you.</p>
+
+<h2>Do I need a key or a Google Sheet?</h2>
+<p>No. Events, contacts, lead scores, card scanning and follow-up drafts all work on your iPhone with nothing set up. A Google Sheet adds sync with a spreadsheet you own; an OpenAI key adds an optional cloud reader for cards and an extra drafting voice.</p>
+
+<h2>How do I connect a Google Sheet?</h2>
+<p>In Ventureo, open <strong>Settings → Set up your Sheet</strong>. It's easiest on a computer:</p>
+<ol>
+  <li>Create a Google Sheet with two tabs, <strong>Events</strong> and <strong>Contacts</strong>. The app copies each tab's header row for you.</li>
+  <li>In the Sheet, open <strong>Extensions → Apps Script</strong> and paste in the Ventureo script. Tap <strong>Send script to your computer</strong> in the app to email or AirDrop it to yourself.</li>
+  <li>Choose <code>setup</code> in the function menu and press <strong>Run</strong>. Google asks you to authorize it, because it's your own script in your own account. The log shows your sync token.</li>
+  <li><strong>Deploy → New deployment → Web app</strong>, with Execute as: <em>Me</em> and Who has access: <em>Anyone</em>. Copy the Web app URL (it ends in <code>/exec</code>).</li>
+  <li>Back in Ventureo, paste the URL and the token in <strong>Settings</strong> under the Sheet section, tap <strong>Save sync settings</strong>, then pull down on the Contacts or Events tab to sync.</li>
+</ol>
+
+<h2>Why does the script need access set to "Anyone"?</h2>
+<p>That's what lets your phone reach it. Every request must also carry your sync token, and the script refuses anything without it, so the URL on its own is useless to anyone else. Keep the token private, like a password.</p>
+
+<h2>"The sync token was rejected"</h2>
+<p>The token in Settings doesn't match the one your script generated. Run <code>setup</code> again in Apps Script (it keeps the same token) and copy it from the log.</p>
+
+<h2>I set up my Sheet before October 2026 and rows come back blank</h2>
+<p>An early version of the script wrote blank IDs. Paste the current script from <strong>Set up your Sheet</strong>, run <code>setup</code> once more, then use <strong>Deploy → Manage deployments → Edit → New version</strong> so the same URL serves the new code.</p>
+
+<h2>The card scan missed a field</h2>
+<p>Cards are read on your iPhone. Try a flat, well-lit shot that fills the frame, then fix anything by hand. If you added an OpenAI key and allowed sending contact data to OpenAI in Settings, the cloud reader is used instead and usually reads tricky cards better.</p>
+
+<h2>Something's not working</h2>
+<p>Email a description of what happened (and a screenshot if you can) to <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a>, and include your iOS version. Please never send your sync token or OpenAI key.</p>
+
+<footer>Aguach1leLabs · <a href="privacy.html">Privacy Policy</a> · <a href="marketing.html">About Ventureo</a></footer>
+</body>
+</html>

@@ -14,12 +14,28 @@
 </head>
 <body>
 <h1>MapWise — Privacy Policy</h1>
-<p><em>Last updated: August 2026</em></p>
+<p><em>Last updated: October 2026</em></p>
 
-<p>MapWise is built local-first: your territory notes and plan entries are stored only on your device, using Apple's on-device SwiftData framework. Aguach1leLabs does not operate a server, and there is no account or login — we never receive or store your data.</p>
+<p>MapWise is built local-first. Your areas, layers, pins, listings, and notes are stored only on your device, using Apple's on-device SwiftData framework. Aguach1leLabs does not operate a server, and there is no account or login. We never receive or store your data.</p>
 
-<h2>Territory data</h2>
-<p>The signal scores you browse come from a dataset built into the app itself — nothing is fetched from or sent to a server today. MapWise makes no network calls in its current build.</p>
+<h2>Your location</h2>
+<p>If you allow it, MapWise uses your approximate location (while the app is open) to center the map on where you are. Your location isn't stored in any history and isn't sent to Aguach1leLabs.</p>
+
+<h2>Data sources MapWise contacts, and what they receive</h2>
+<p>MapWise only contacts a service when you ask for a layer or search. Each request goes directly from your device to that provider. It never passes through us.</p>
+<ul>
+  <li><strong>Apple Maps</strong> (search, places, address lookup): your search text and the area being searched. Covered by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+  <li><strong>OpenStreetMap Overpass API</strong> (government buildings, transit lines, bus lanes, markets): the center and radius of the area. Operated by the OpenStreetMap community; see the <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OSMF privacy policy</a>. If that server is busy, the same request goes to a public mirror of the same service run by VK (maps.mail.ru), under VK's own terms.</li>
+  <li><strong>INEGI DENUE</strong> (Mexico's business directory; only if you add your own token): your search term, the area's center and radius, and your token. See <a href="https://www.inegi.org.mx/inegi/terminos.html">INEGI's terms</a>.</li>
+  <li><strong>A listing page you paste</strong>: when you paste a link and tap "Read this listing", MapWise fetches that one page from that website to read its published price, size, and location, just like opening it in a browser.</li>
+</ul>
+<p>MapWise does not crawl or bulk-download listing websites.</p>
+
+<h2>Your DENUE token</h2>
+<p>If you enter an INEGI DENUE token, it's stored in your device's Keychain and sent only to INEGI with your DENUE searches.</p>
+
+<h2>Files you import or export</h2>
+<p>CSV and GeoJSON files you import are read on your device. Exports are created on your device and go only where you choose to share them.</p>
 
 <h2>What we don't do</h2>
 <ul>
@@ -28,9 +44,6 @@
   <li>No tracking across other companies' apps or websites</li>
   <li>No sale of your data — we don't have a way to collect it in the first place</li>
 </ul>
-
-<h2>Third parties</h2>
-<p>MapWise doesn't communicate with any third-party service in its current build. If a live data source is added in a future version, this policy will be updated before that version ships to describe exactly what's sent and to whom.</p>
 
 <h2>Children's privacy</h2>
 <p>MapWise is not directed at children and does not knowingly collect information from anyone.</p>

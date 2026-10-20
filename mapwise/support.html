@@ -18,13 +18,27 @@
 <p>Need help with MapWise? Email <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a> and I'll get back to you.</p>
 
 <h2>Do I need an API key?</h2>
-<p>No. MapWise doesn't use any cloud AI service today — territory data comes from a hand-curated dataset built into the app.</p>
+<p>No. Apple Maps and OpenStreetMap layers work without one. The only optional key is a free <a href="https://www.inegi.org.mx/servicios/api_denue.html">INEGI DENUE token</a>, which unlocks the "Businesses (DENUE)" layer for Mexican cities. Paste it in Settings; it's stored in your device's Keychain.</p>
 
-<h2>Where does the territory data come from?</h2>
-<p>The current signal scores are a seed dataset, clearly labeled in the app as a placeholder rather than a live reading. A real, continuously-updated data source is still being decided — this page will be updated once that changes.</p>
+<h2>Why doesn't a layer show every school / café in the area?</h2>
+<p>Apple Maps returns a sample of places per request. MapWise searches the area in overlapping tiles to collect more, but it's still a sample, not a census, and the layer's detail screen says how many came back. Smaller areas (1–2 km) give fuller layers. OpenStreetMap layers are only as complete as that city's volunteer mapping.</p>
+
+<h2>How do I add rental listings?</h2>
+<ul>
+  <li><strong>Import</strong> a CSV or GeoJSON file (Layers → Add a layer → Listings). MapWise recognizes columns in English or Spanish: name/título, price/precio, m2/superficie, type/tipo, url, latitude/latitud, longitude/longitud, or address/dirección.</li>
+  <li><strong>Paste one listing's link</strong>. MapWise reads the price, size, and location the page publishes. Some sites block this; then type the numbers in.</li>
+  <li><strong>Place it on the map</strong> with the Listing button and enter the price and size.</li>
+</ul>
+<p>MapWise doesn't scrape listing websites. Their terms don't allow it.</p>
+
+<h2>How are scores calculated?</h2>
+<p>Each lens ("Open a business", "Buy to rent", "Live here") weights your layers. A spot scores higher the closer it is to layers the lens wants (and the more of them are within walking reach), and lower near layers you've marked as competition. Listings also get a price score: price per m² against the median of the area's other listings of the same type. Every score in the app lists the reasons behind it, and you can edit the weights.</p>
+
+<h2>Can I get my data out?</h2>
+<p>Yes. The Data tab exports a whole area as GeoJSON (opens in QGIS, geojson.io, Google My Maps) or any filtered list as CSV, with scores included.</p>
 
 <h2>Is my data backed up anywhere?</h2>
-<p>Your plan notes live on your device. If you use iCloud backup for your phone, they're included in that backup like any other app's data. MapWise itself has no cloud server.</p>
+<p>Your areas, layers, and notes live on your device. If you use iCloud backup for your phone, they're included in that backup like any other app's data. MapWise itself has no cloud server.</p>
 
 <h2>Something's not working</h2>
 <p>Email a description of what happened (and a screenshot if you can) to <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a> — include your iOS version and the app version (Settings → About).</p>
