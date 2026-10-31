@@ -1,0 +1,137 @@
+/* Styling for the promo landing page (docs/promo/index.html), the page an Instagram code drop
+   opens. It's a studio surface, so it wears the studio identity (documentation/Brand.md):
+   basalt ground, onion for the one action, codes in JetBrains Mono, a shrimp perforation. */
+:root {
+  --ground: #0E0F14; --surface: #171926; --surface-sunk: #090A0E; --line: #2B2E40; --line-strong: #6E6A85;
+  --ink: #F3F1F8; --ink-muted: #A9A6BC; --onion: #F0679A; --on-onion: #1A0710; --lime: #D8F05A; --shrimp: #FF8E6E;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 28px max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--ground);
+  text-align: center;
+}
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+.promo-brand { display: inline-block; margin-bottom: 28px; line-height: 0; }
+.promo-brand img { height: 24px; width: auto; }
+.promo-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 24%;
+  margin: 0 auto 1em;
+  display: block;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+}
+h1 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-size: 2em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.2em;
+}
+.promo-about {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin: 0 0 0.3em;
+}
+.tagline {
+  font-size: 1.05em;
+  color: var(--ink-muted);
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+.promo-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1em 1em 1.1em;
+  margin-bottom: 0.9em;
+  border-bottom: 3px dashed var(--shrimp);
+}
+.promo-tried {
+  font-size: 0.8em;
+  color: var(--lime);
+  min-height: 1.2em;
+}
+.promo-actions {
+  display: flex;
+  gap: 0.6em;
+  margin-top: 0.4em;
+}
+.promo-actions .promo-download {
+  flex: 2;
+  margin: 0;
+}
+.promo-actions .promo-copy {
+  flex: 1;
+  width: auto;
+  margin: 0;
+}
+.promo-note {
+  font-size: 0.9em;
+  color: var(--ink-muted);
+  margin: 1.2em 0 0;
+}
+.promo-code {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1.45em;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  padding: 0.3em 0 0;
+  word-break: break-all;
+}
+.promo-copy {
+  display: block;
+  width: 100%;
+  padding: 0.7em;
+  margin: 0.8em 0;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.promo-copy:active {
+  background: var(--surface-sunk);
+}
+.promo-download {
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 0.6em;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--on-onion);
+  background: var(--onion);
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 0 32px rgba(240, 103, 154, 0.35);
+}
+.promo-store {
+  display: inline-block;
+  margin-top: 1.4em;
+  color: var(--lime);
+  font-weight: 600;
+}
+.promo-loading,
+.promo-empty,
+.promo-error {
+  color: var(--ink-muted);
+}
+footer {
+  margin-top: 2em;
+  font-size: 0.85em;
+  color: var(--ink-muted);
+}
+footer a {
+  color: var(--ink-muted);
+}

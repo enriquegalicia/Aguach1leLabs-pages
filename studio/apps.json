@@ -1,0 +1,1217 @@
+{
+  "_how": "Source of truth for the website's catalog (docs/index.html and docs/es/index.html). Edit here, then run: python3 scripts/build_catalog.py --refresh  (--refresh reads live App Store data for every bundle id from Apple's public lookup API into 'store'). status: live | soon | dev | lab. 'live' is set by --refresh when the store has the app. Never list PromoVault (internal) or RoadMind (folding into Sidequest). Apps with a 'world' entry get a planet in the Worlds section (order: worldsOrder) and orbit the Slice in the hero (order: heroOrder); their planet look lives in docs/studio/worlds.js under the same slug. Also read by PromoVault (it bundles this file and downloads the published copy to know which apps are on the App Store) and by the promo page (docs/_shared/promo.js): keep the keys refreshed, slug, name, bundle, status, tagline and store stable. 'refreshed' is stamped by --refresh.",
+  "refreshed": "2026-10-31T21:42:50Z",
+  "apps": [
+    {
+      "slug": "criticalpath",
+      "name": "Critical Path",
+      "color": "#7CFF5B",
+      "status": "live",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.CriticalPath",
+      "minIOS": "17.0",
+      "android": true,
+      "category": {
+        "en": "Simulation",
+        "es": "Simulación"
+      },
+      "tagline": {
+        "en": "Cash-flow business simulator",
+        "es": "Simulador de negocios y flujo de caja"
+      },
+      "summary": {
+        "en": "Run a construction job, a startup or an import business, and watch your critical path and cash curve while you decide.",
+        "es": "Dirige una obra, una startup o un negocio de importación, y mira tu ruta crítica y tu flujo de caja mientras decides."
+      },
+      "needs": {
+        "en": [
+          "Game Center for leaderboards (optional)"
+        ],
+        "es": [
+          "Game Center para las tablas de puntuación (opcional)"
+        ]
+      },
+      "world": {
+        "bg": "#10161F",
+        "tagline": {
+          "en": "Cash-flow business simulator",
+          "es": "Simulador de negocios y flujo de caja"
+        },
+        "bullets": {
+          "en": [
+            "Run a construction job, a startup or an import business",
+            "A live critical path shows what sets your finish date",
+            "One score that means anything across all three: profit"
+          ],
+          "es": [
+            "Dirige una obra, una startup o un negocio de importación",
+            "Una ruta crítica en vivo te muestra qué fija tu fecha de entrega",
+            "Un solo puntaje que importa en los tres: la utilidad"
+          ]
+        }
+      },
+      "store": {
+        "us": {
+          "id": 6804559245,
+          "name": "CriticalPathSim",
+          "url": "https://apps.apple.com/us/app/criticalpathsim/id6804559245",
+          "price": 2.99,
+          "formattedPrice": "$2.99",
+          "currency": "USD",
+          "version": "1.0",
+          "minimumOsVersion": "17.0",
+          "released": "2026-10-26",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6804559245,
+          "name": "CriticalPathSim",
+          "url": "https://apps.apple.com/mx/app/criticalpathsim/id6804559245",
+          "price": 69.0,
+          "formattedPrice": "$69.00",
+          "currency": "MXN",
+          "version": "1.0",
+          "minimumOsVersion": "17.0",
+          "released": "2026-10-26",
+          "ipad": true
+        }
+      }
+    },
+    {
+      "slug": "peppertalk",
+      "name": "PepperTalk",
+      "color": "#CC3D2B",
+      "status": "soon",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.PepperTalk",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Self-improvement",
+        "es": "Desarrollo personal"
+      },
+      "tagline": {
+        "en": "Assertiveness training you do out loud",
+        "es": "Entrenamiento de asertividad en voz alta"
+      },
+      "summary": {
+        "en": "Learn a named technique, then practice it out loud with a character who pushes back.",
+        "es": "Aprende una técnica y practícala en voz alta con un personaje que te lleva la contraria."
+      },
+      "needs": {
+        "en": [
+          "Microphone and speech recognition",
+          "The improvising partner needs Apple Intelligence (iOS 26 or later); the scripted partner works on every iPhone"
+        ],
+        "es": [
+          "Micrófono y reconocimiento de voz",
+          "El compañero que improvisa necesita Apple Intelligence (iOS 26 o posterior); el compañero con guion funciona en cualquier iPhone"
+        ]
+      },
+      "world": {
+        "bg": "#3A1410",
+        "tagline": {
+          "en": "Assertiveness training you do out loud",
+          "es": "Entrenamiento de asertividad en voz alta"
+        },
+        "bullets": {
+          "en": [
+            "28 days, about ten minutes a day",
+            "Roleplays with characters who react to how you say it",
+            "A Phrase Coach that catches \"sorry to bother you\" and \"you always\""
+          ],
+          "es": [
+            "28 días, unos diez minutos al día",
+            "Juegos de rol con personajes que reaccionan a cómo lo dices",
+            "Un coach de frases que detecta \"perdón por molestar\" y \"tú siempre\""
+          ]
+        }
+      }
+    },
+    {
+      "slug": "fidgetlog",
+      "name": "FidgetLog",
+      "color": "#A56BFF",
+      "status": "soon",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.FidgetLog",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Games",
+        "es": "Juegos"
+      },
+      "tagline": {
+        "en": "Your touch shapes its DNA",
+        "es": "Tu forma de tocarla moldea su ADN"
+      },
+      "summary": {
+        "en": "A squishy blob pet whose body records how you touch it. No two end up alike.",
+        "es": "Una mascota blandita cuyo cuerpo guarda cómo la tocas. No hay dos iguales."
+      },
+      "needs": {
+        "en": [],
+        "es": []
+      },
+      "world": {
+        "bg": "#170F26",
+        "tagline": {
+          "en": "Your touch shapes its DNA",
+          "es": "Tu forma de tocarla moldea su ADN"
+        },
+        "bullets": {
+          "en": [
+            "Tap it and it grows spikes; stretch it and it grows long",
+            "An Evolution page for every day you play",
+            "Pop-Eggs you earn, never buy"
+          ],
+          "es": [
+            "Si le das toquecitos le salen picos; si la estiras, se alarga",
+            "Una página de evolución por cada día que juegas",
+            "Huevos sorpresa que se ganan, nunca se compran"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "wanderclue",
+      "name": "WanderClue",
+      "color": "#E07A2A",
+      "status": "soon",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.WanderClue",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Games",
+        "es": "Juegos"
+      },
+      "tagline": {
+        "en": "Every street becomes a quest",
+        "es": "Cada calle se vuelve una aventura"
+      },
+      "summary": {
+        "en": "Puzzle walks built from the map wherever you stand, where every answer is really there.",
+        "es": "Paseos con acertijos armados con el mapa de donde estés; cada respuesta está ahí de verdad."
+      },
+      "needs": {
+        "en": [
+          "Location, and walking outdoors",
+          "Story-written quests need Apple Intelligence or your own OpenAI key; the others work without either",
+          "Game Center (optional)"
+        ],
+        "es": [
+          "Ubicación, y caminar al aire libre",
+          "Los recorridos con historia necesitan Apple Intelligence o tu propia clave de OpenAI; los demás funcionan sin ninguna",
+          "Game Center (opcional)"
+        ]
+      },
+      "world": {
+        "bg": "#15110D",
+        "tagline": {
+          "en": "Every street becomes a quest",
+          "es": "Cada calle se vuelve una aventura"
+        },
+        "bullets": {
+          "en": [
+            "Quests built from the map wherever you stand",
+            "Every answer is really there: a sign, a name over a door",
+            "Challenge a friend to race your route"
+          ],
+          "es": [
+            "Recorridos armados con el mapa de donde estés",
+            "Cada respuesta está ahí de verdad: un letrero, un nombre sobre una puerta",
+            "Reta a alguien a correr tu misma ruta"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "overlanded",
+      "name": "OverLanded",
+      "color": "#2ED3B7",
+      "status": "soon",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.OverLand",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Photo & Video",
+        "es": "Foto y video"
+      },
+      "tagline": {
+        "en": "Your day, your route, a book",
+        "es": "Tu día, tu ruta, un libro"
+      },
+      "summary": {
+        "en": "Turn one day out into a photo book you can edit page by page, with your route on a map, and keep it as a PDF.",
+        "es": "Convierte un día de paseo en un fotolibro que editas página por página, con tu ruta en un mapa, y guárdalo en PDF."
+      },
+      "needs": {
+        "en": [
+          "Access to your photos",
+          "Story pages are written on the device with Apple Intelligence; elsewhere they're built from your answers"
+        ],
+        "es": [
+          "Acceso a tus fotos",
+          "Las páginas de historia se escriben en el teléfono con Apple Intelligence; si no, se arman con tus respuestas"
+        ]
+      },
+      "world": {
+        "bg": "#0A1322",
+        "tagline": {
+          "en": "Your day, your route, a book",
+          "es": "Tu día, tu ruta, un libro"
+        },
+        "bullets": {
+          "en": [
+            "A first draft of your photo book in seconds",
+            "Your route on a map page, and a story page from a few questions",
+            "Edit every page, keep it as a PDF"
+          ],
+          "es": [
+            "Un primer borrador de tu fotolibro en segundos",
+            "Tu ruta en un mapa y una página de historia a partir de unas preguntas",
+            "Edita cada página y guárdalo en PDF"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "therisetrack",
+      "name": "TheRiseTrack",
+      "color": "#57D696",
+      "status": "soon",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.RiseTrack",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Habits",
+        "es": "Hábitos"
+      },
+      "tagline": {
+        "en": "Climb it. Never miss twice.",
+        "es": "Sube 30 días sin fallar dos"
+      },
+      "summary": {
+        "en": "A new habit as a 30-day climb, with quests, XP, levels and Shields that forgive a single slip.",
+        "es": "Un hábito nuevo como un ascenso de 30 días, con misiones, XP, niveles y escudos que perdonan un tropiezo."
+      },
+      "needs": {
+        "en": [
+          "Microphone for voice-guided routines (optional)"
+        ],
+        "es": [
+          "Micrófono para las rutinas guiadas por voz (opcional)"
+        ]
+      },
+      "world": {
+        "bg": "#08170F",
+        "tagline": {
+          "en": "Climb it. Never miss twice.",
+          "es": "Sube 30 días sin fallar dos"
+        },
+        "bullets": {
+          "en": [
+            "A new habit as a 30-day climb in three phases",
+            "Shields forgive a single slip",
+            "XP and levels from Trailhead to Peak"
+          ],
+          "es": [
+            "Un hábito nuevo como un ascenso de 30 días en tres fases",
+            "Los escudos te perdonan un tropiezo",
+            "XP y niveles en seis rangos, hasta la cima"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "pagewiser",
+      "name": "PageWiser",
+      "color": "#3A8AC4",
+      "status": "lab",
+      "featured": true,
+      "bundle": "com.aguach1leLabs.PageWise",
+      "minIOS": "17.0",
+      "android": false,
+      "category": {
+        "en": "Education",
+        "es": "Educación"
+      },
+      "tagline": {
+        "en": "Reading help for young readers",
+        "es": "Ayuda para lectores pequeños"
+      },
+      "summary": {
+        "en": "Tap a word to hear it and get a meaning sized for kids, in English and Spanish. Being rebuilt in the lab.",
+        "es": "Toca una palabra para oírla y ver un significado a su medida, en inglés y en español. Se está rehaciendo en el laboratorio."
+      },
+      "needs": {
+        "en": [
+          "Camera"
+        ],
+        "es": [
+          "Cámara"
+        ]
+      },
+      "world": {
+        "bg": "#0E1A26",
+        "tagline": {
+          "en": "Reading help for young readers",
+          "es": "Ayuda para lectores pequeños"
+        },
+        "bullets": {
+          "en": [
+            "Tap a word to hear it and get a meaning sized for kids",
+            "English and Spanish",
+            "One price, no subscription"
+          ],
+          "es": [
+            "Toca una palabra para oírla y ver un significado a su medida",
+            "En inglés y en español",
+            "Un solo pago, sin suscripción"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "yourmindspark",
+      "name": "YourMindSpark",
+      "color": "#8A5AC4",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.MindSpark",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Games",
+        "es": "Juegos"
+      },
+      "tagline": {
+        "en": "Daily puzzles",
+        "es": "Rompecabezas diarios"
+      },
+      "summary": {
+        "en": "Twenty daily games grouped by mood: logic and numbers, memory, words, speed and strategy.",
+        "es": "Veinte juegos diarios agrupados por ánimo: lógica y números, memoria, palabras, velocidad y estrategia."
+      },
+      "needs": {
+        "en": [
+          "Game Center for leaderboards (optional)"
+        ],
+        "es": [
+          "Game Center para las tablas de puntuación (opcional)"
+        ]
+      },
+      "store": {
+        "us": {
+          "id": 6796905975,
+          "name": "YourMindSpark",
+          "url": "https://apps.apple.com/us/app/yourmindspark/id6796905975",
+          "price": 1.99,
+          "formattedPrice": "$1.99",
+          "currency": "USD",
+          "version": "1.2",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-08",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6796905975,
+          "name": "YourMindSpark",
+          "url": "https://apps.apple.com/mx/app/yourmindspark/id6796905975",
+          "price": 39.0,
+          "formattedPrice": "$39.00",
+          "currency": "MXN",
+          "version": "1.2",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-08",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#1c1033",
+        "tagline": {
+          "en": "Daily puzzles that spark",
+          "es": "Rompecabezas diarios que encienden la mente"
+        },
+        "bullets": {
+          "en": [
+            "Twenty daily games, grouped by mood",
+            "A Daily Challenge plus a Training Mode",
+            "Game Center leaderboards for every game"
+          ],
+          "es": [
+            "Veinte juegos diarios, agrupados por ánimo",
+            "Un reto diario y un modo de práctica",
+            "Tablas de Game Center para cada juego"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "steadymind",
+      "name": "SteadyMind",
+      "color": "#3DAA6E",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.SteadyMind",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Games",
+        "es": "Juegos"
+      },
+      "tagline": {
+        "en": "Daily sharpness challenges",
+        "es": "Retos diarios de agilidad mental"
+      },
+      "summary": {
+        "en": "Twenty daily challenges for speed, recall and wit, built for people who take their time seriously.",
+        "es": "Veinte retos diarios de velocidad, memoria e ingenio, para quienes se toman su tiempo en serio."
+      },
+      "needs": {
+        "en": [
+          "Game Center for leaderboards (optional)"
+        ],
+        "es": [
+          "Game Center para las tablas de puntuación (opcional)"
+        ]
+      },
+      "store": {
+        "us": {
+          "id": 6797058509,
+          "name": "Brain Training - SteadyMind",
+          "url": "https://apps.apple.com/us/app/brain-training-steadymind/id6797058509",
+          "price": 1.99,
+          "formattedPrice": "$1.99",
+          "currency": "USD",
+          "version": "1.3",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-01",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6797058509,
+          "name": "Brain Training - SteadyMind",
+          "url": "https://apps.apple.com/mx/app/brain-training-steadymind/id6797058509",
+          "price": 39.0,
+          "formattedPrice": "$39.00",
+          "currency": "MXN",
+          "version": "1.3",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-01",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#1a2416",
+        "tagline": {
+          "en": "Daily sharpness challenges",
+          "es": "Retos diarios de agilidad mental"
+        },
+        "bullets": {
+          "en": [
+            "Twenty short challenges: speed, recall and wit",
+            "45-second sessions that fit anywhere",
+            "A family check-in, if you want one"
+          ],
+          "es": [
+            "Veinte retos cortos: velocidad, memoria e ingenio",
+            "Sesiones de 45 segundos que caben en cualquier momento",
+            "Un aviso para tu familia, si lo quieres"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "mapwise",
+      "name": "MapWise",
+      "color": "#3A8AC4",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.MapWise",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Business",
+        "es": "Negocios"
+      },
+      "tagline": {
+        "en": "See a city's layers. Spot the deals.",
+        "es": "Mira las capas de una ciudad. Encuentra oportunidades."
+      },
+      "summary": {
+        "en": "Frame a neighbourhood, add the layers you need (schools, transit, government, businesses, listings) and score the spots.",
+        "es": "Encuadra una colonia, agrega las capas que necesitas (escuelas, transporte, gobierno, negocios, inmuebles) y califica cada lugar."
+      },
+      "needs": {
+        "en": [
+          "Internet connection for map layers",
+          "A free INEGI DENUE token for the Mexico business layer (optional)"
+        ],
+        "es": [
+          "Conexión a internet para las capas del mapa",
+          "Un token gratuito del DENUE de INEGI para la capa de negocios de México (opcional)"
+        ]
+      },
+      "store": {
+        "us": {
+          "id": 6797058723,
+          "name": "Territory Finder - MapWise",
+          "url": "https://apps.apple.com/us/app/territory-finder-mapwise/id6797058723",
+          "price": 1.99,
+          "formattedPrice": "$1.99",
+          "currency": "USD",
+          "version": "1.0",
+          "minimumOsVersion": "17.5",
+          "released": "2026-10-05",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6797058723,
+          "name": "Territory Finder - MapWise",
+          "url": "https://apps.apple.com/mx/app/territory-finder-mapwise/id6797058723",
+          "price": 39.0,
+          "formattedPrice": "$39.00",
+          "currency": "MXN",
+          "version": "1.0",
+          "minimumOsVersion": "17.5",
+          "released": "2026-10-05",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#0b1a2e",
+        "tagline": {
+          "en": "See a city's layers. Spot the deals.",
+          "es": "Mira las capas de una ciudad. Encuentra oportunidades."
+        },
+        "bullets": {
+          "en": [
+            "Search a city and save the area you care about",
+            "Add layers: schools, transit, government, businesses, listings",
+            "Score every spot with three deal lenses"
+          ],
+          "es": [
+            "Busca una ciudad y guarda la zona que te importa",
+            "Agrega capas: escuelas, transporte, gobierno, negocios, inmuebles",
+            "Califica cada lugar con tres lentes de oportunidad"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "keepchallengeit",
+      "name": "KeepChallengeIt",
+      "color": "#D94040",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.Challenger",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Health & Fitness",
+        "es": "Salud y forma física"
+      },
+      "tagline": {
+        "en": "Daily streak",
+        "es": "Racha diaria"
+      },
+      "summary": {
+        "en": "One challenge a day, built in, or your own around any goal, and challenge a friend to beat you.",
+        "es": "Un reto al día, incluido, o el tuyo alrededor de cualquier meta, y reta a alguien a superarte."
+      },
+      "needs": {
+        "en": [
+          "iCloud to challenge friends (optional)"
+        ],
+        "es": [
+          "iCloud para retar a tus amigos (opcional)"
+        ]
+      },
+      "store": {
+        "us": {
+          "id": 6804486637,
+          "name": "KeepChallengeIt",
+          "url": "https://apps.apple.com/us/app/keepchallengeit/id6804486637",
+          "price": 1.99,
+          "formattedPrice": "$1.99",
+          "currency": "USD",
+          "version": "1.0",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-08",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6804486637,
+          "name": "KeepChallengeIt",
+          "url": "https://apps.apple.com/mx/app/keepchallengeit/id6804486637",
+          "price": 39.0,
+          "formattedPrice": "$39.00",
+          "currency": "MXN",
+          "version": "1.0",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-08",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#2a0d0d",
+        "tagline": {
+          "en": "One challenge a day",
+          "es": "Un reto al día"
+        },
+        "bullets": {
+          "en": [
+            "A daily challenge scaled to your level",
+            "Build your own around any goal",
+            "Challenge a friend to beat you"
+          ],
+          "es": [
+            "Un reto diario a tu nivel",
+            "Crea el tuyo alrededor de cualquier meta",
+            "Reta a alguien a superarte"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "theluckynumber",
+      "name": "TheLuckyNumber",
+      "color": "#E6B84A",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.LLNumbers",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Entertainment",
+        "es": "Entretenimiento"
+      },
+      "tagline": {
+        "en": "Pick your numbers, 4 ways",
+        "es": "Elige tus números de 4 formas"
+      },
+      "summary": {
+        "en": "Four fun ways to draw your lottery numbers, saved so you can look back. For entertainment only.",
+        "es": "Cuatro formas divertidas de sacar tus números de lotería, guardadas para que las revises después. Solo para entretenimiento."
+      },
+      "needs": {
+        "en": [],
+        "es": []
+      },
+      "store": {
+        "us": {
+          "id": 6804488464,
+          "name": "TheLuckyNumber",
+          "url": "https://apps.apple.com/us/app/theluckynumber/id6804488464",
+          "price": 1.99,
+          "formattedPrice": "$1.99",
+          "currency": "USD",
+          "version": "1.0",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-01",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6804488464,
+          "name": "TheLuckyNumber",
+          "url": "https://apps.apple.com/mx/app/theluckynumber/id6804488464",
+          "price": 39.0,
+          "formattedPrice": "$39.00",
+          "currency": "MXN",
+          "version": "1.0",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-01",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#0d2418",
+        "tagline": {
+          "en": "Pick your numbers, four ways",
+          "es": "Elige tus números de cuatro formas"
+        },
+        "bullets": {
+          "en": [
+            "Quick pick, birth date, zodiac or probability",
+            "Every draw saved so you can look back",
+            "For entertainment only"
+          ],
+          "es": [
+            "Rápida, fecha de nacimiento, zodiaco o probabilidad",
+            "Cada sorteo se guarda para revisarlo después",
+            "Solo para entretenimiento"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "sharednapkin",
+      "name": "SharedNapkin",
+      "color": "#5B8DEF",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.SharedNapkin",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Productivity",
+        "es": "Productividad"
+      },
+      "tagline": {
+        "en": "Sketch together",
+        "es": "Dibujen juntos"
+      },
+      "summary": {
+        "en": "Draw on the same canvas with someone standing next to you: no Wi-Fi, no account, no server.",
+        "es": "Dibuja en el mismo lienzo con alguien a tu lado: sin Wi-Fi, sin cuenta, sin servidor."
+      },
+      "needs": {
+        "en": [
+          "Two iPhones or iPads near each other, with Wi-Fi or Bluetooth turned on"
+        ],
+        "es": [
+          "Dos iPhone o iPad cerca uno del otro, con Wi-Fi o Bluetooth encendido"
+        ]
+      },
+      "store": {
+        "us": {
+          "id": 6804553332,
+          "name": "SharedNapkin",
+          "url": "https://apps.apple.com/us/app/sharednapkin/id6804553332",
+          "price": 0.0,
+          "formattedPrice": "Free",
+          "currency": "USD",
+          "version": "1.1",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-16",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6804553332,
+          "name": "SharedNapkin",
+          "url": "https://apps.apple.com/mx/app/sharednapkin/id6804553332",
+          "price": 0.0,
+          "formattedPrice": "Gratis",
+          "currency": "MXN",
+          "version": "1.1",
+          "minimumOsVersion": "17.5",
+          "released": "2026-09-16",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#0f1c33",
+        "tagline": {
+          "en": "Sketch together, right now",
+          "es": "Dibujen juntos, ahora mismo"
+        },
+        "bullets": {
+          "en": [
+            "Two people, one canvas, drawing live",
+            "No Wi-Fi, no account, no server",
+            "Your handwriting turned into text on the phone"
+          ],
+          "es": [
+            "Dos personas, un lienzo, dibujando en vivo",
+            "Sin Wi-Fi, sin cuenta, sin servidor",
+            "Tu letra se vuelve texto en el teléfono"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "randosquad",
+      "name": "RandoSquad",
+      "color": "#4FC3A1",
+      "status": "live",
+      "bundle": "com.aguach1leLabs.RandoSquad",
+      "minIOS": "17.0",
+      "android": true,
+      "category": {
+        "en": "Education",
+        "es": "Educación"
+      },
+      "tagline": {
+        "en": "Fair groups & participation",
+        "es": "Grupos y participación justos"
+      },
+      "summary": {
+        "en": "Random, balanced groups and fair turns for your class: add your roster once and let it do the rest.",
+        "es": "Grupos al azar y equilibrados, y turnos justos para tu clase: agrega tu lista una vez y deja que haga el resto."
+      },
+      "needs": {
+        "en": [],
+        "es": []
+      },
+      "store": {
+        "us": {
+          "id": 6804559436,
+          "name": "RandoSquad",
+          "url": "https://apps.apple.com/us/app/randosquad/id6804559436",
+          "price": 1.99,
+          "formattedPrice": "$1.99",
+          "currency": "USD",
+          "version": "1.0",
+          "minimumOsVersion": "17.0",
+          "released": "2026-09-16",
+          "ipad": true
+        },
+        "mx": {
+          "id": 6804559436,
+          "name": "RandoSquad",
+          "url": "https://apps.apple.com/mx/app/randosquad/id6804559436",
+          "price": 39.0,
+          "formattedPrice": "$39.00",
+          "currency": "MXN",
+          "version": "1.0",
+          "minimumOsVersion": "17.0",
+          "released": "2026-09-16",
+          "ipad": true
+        }
+      },
+      "world": {
+        "bg": "#0c2219",
+        "tagline": {
+          "en": "Fair groups and fair turns",
+          "es": "Grupos justos y turnos justos"
+        },
+        "bullets": {
+          "en": [
+            "Balanced groups in one tap, never the same mix twice",
+            "Fair turns when you call on students",
+            "Add your roster once"
+          ],
+          "es": [
+            "Grupos equilibrados en un toque, sin repetir la misma mezcla",
+            "Turnos justos para dar la palabra",
+            "Agrega tu lista una sola vez"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "gastrosnap",
+      "name": "GastroSnap",
+      "color": "#D4960A",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.GastroSnap",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Food & Drink",
+        "es": "Comida y bebida"
+      },
+      "tagline": {
+        "en": "Recipe scanner",
+        "es": "Escáner de recetas"
+      },
+      "summary": {
+        "en": "Point your camera at a cookbook page and get a real recipe you can cook from, plus shopping lists and cooking notes.",
+        "es": "Apunta la cámara a la página de un recetario y obtén una receta real para cocinar, con listas de compras y notas."
+      },
+      "needs": {
+        "en": [
+          "Camera",
+          "Your own OpenAI API key for scanning"
+        ],
+        "es": [
+          "Cámara",
+          "Tu propia clave de OpenAI para escanear"
+        ]
+      }
+    },
+    {
+      "slug": "alifethread",
+      "name": "LifeThread",
+      "color": "#8A5AC4",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.LifeThread",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Lifestyle",
+        "es": "Estilo de vida"
+      },
+      "tagline": {
+        "en": "Voice journal",
+        "es": "Diario de voz"
+      },
+      "summary": {
+        "en": "Talk to a version of you from another time, and keep each reflection as a chapter.",
+        "es": "Habla con una versión de ti de otro momento y guarda cada reflexión como un capítulo."
+      },
+      "needs": {
+        "en": [
+          "Microphone and speech recognition (typing works too)"
+        ],
+        "es": [
+          "Micrófono y reconocimiento de voz (también puedes escribir)"
+        ]
+      }
+    },
+    {
+      "slug": "calmbreak",
+      "name": "CalmBreak",
+      "color": "#3A8AC4",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.CalmBreak",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Health & Fitness",
+        "es": "Salud y forma física"
+      },
+      "tagline": {
+        "en": "Every urge you resist lights a star",
+        "es": "Cada impulso que resistes enciende una estrella"
+      },
+      "summary": {
+        "en": "One breath before the apps that pull you in, and a star for every urge you let pass.",
+        "es": "Una respiración antes de las apps que te atrapan, y una estrella por cada impulso que dejas pasar."
+      },
+      "needs": {
+        "en": [
+          "iOS 18.2 or later for the pause, set up as a Shortcuts automation"
+        ],
+        "es": [
+          "iOS 18.2 o posterior para la pausa, configurada como automatización de Atajos"
+        ]
+      }
+    },
+    {
+      "slug": "platesnap",
+      "name": "PlateSnap",
+      "color": "#D4960A",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.PlateSnap",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Health & Fitness",
+        "es": "Salud y forma física"
+      },
+      "tagline": {
+        "en": "AI calorie tracker",
+        "es": "Contador de calorías con IA"
+      },
+      "summary": {
+        "en": "A photo of your plate becomes ingredients, portions and macros, without logging by hand.",
+        "es": "Una foto de tu plato se vuelve ingredientes, porciones y macros, sin anotar a mano."
+      },
+      "needs": {
+        "en": [
+          "Camera",
+          "Your own OpenAI API key"
+        ],
+        "es": [
+          "Cámara",
+          "Tu propia clave de OpenAI"
+        ]
+      }
+    },
+    {
+      "slug": "sidequest",
+      "name": "Sidequest",
+      "color": "#3DAA6E",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.SideQuest",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Travel",
+        "es": "Viajes"
+      },
+      "tagline": {
+        "en": "Somewhere new, right now",
+        "es": "Algo nuevo, ahora mismo"
+      },
+      "summary": {
+        "en": "Ask out loud for somewhere to go, and get routed there with company on the way.",
+        "es": "Pide en voz alta a dónde ir y llega con compañía en el camino."
+      },
+      "needs": {
+        "en": [
+          "Location and microphone"
+        ],
+        "es": [
+          "Ubicación y micrófono"
+        ]
+      }
+    },
+    {
+      "slug": "viaticosnap",
+      "name": "ViaticoSnap",
+      "color": "#3A8AC4",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.ViaticoSnap",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Finance",
+        "es": "Finanzas"
+      },
+      "tagline": {
+        "en": "Travel expenses with RFC and IVA",
+        "es": "Control de viáticos con RFC e IVA"
+      },
+      "summary": {
+        "en": "Log Mexican business-travel expenses with real RFC and IVA fields, and share a clean summary.",
+        "es": "Registra tus viáticos con RFC e IVA de verdad y comparte un resumen limpio."
+      },
+      "needs": {
+        "en": [
+          "Your own OpenAI API key for receipt scanning (optional)"
+        ],
+        "es": [
+          "Tu propia clave de OpenAI para escanear tickets (opcional)"
+        ]
+      }
+    },
+    {
+      "slug": "postleap",
+      "name": "PostLeap",
+      "color": "#D94040",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.PostLeap",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Productivity",
+        "es": "Productividad"
+      },
+      "tagline": {
+        "en": "A content studio for your Google Sheet",
+        "es": "Un estudio de contenido para tu Google Sheet"
+      },
+      "summary": {
+        "en": "Draft, approve and schedule posts for several accounts, synced with a Google Sheet you own.",
+        "es": "Redacta, aprueba y programa publicaciones para varias cuentas, sincronizadas con un Google Sheet tuyo."
+      },
+      "needs": {
+        "en": [
+          "A Google account and a sheet with the included script",
+          "Your own OpenAI key for AI drafts and images"
+        ],
+        "es": [
+          "Una cuenta de Google y una hoja con el script incluido",
+          "Tu propia clave de OpenAI para borradores e imágenes con IA"
+        ]
+      }
+    },
+    {
+      "slug": "ventureo",
+      "name": "Ventureo",
+      "color": "#C27C0E",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.Ventureo",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Business",
+        "es": "Negocios"
+      },
+      "tagline": {
+        "en": "A CRM for the people you meet at events",
+        "es": "Un CRM para la gente que conoces en eventos"
+      },
+      "summary": {
+        "en": "Track the events you attend and the people you meet there, capture a card with a photo, and follow up.",
+        "es": "Registra los eventos a los que vas y la gente que conoces, captura una tarjeta con una foto y da seguimiento."
+      },
+      "needs": {
+        "en": [
+          "Google Sheet sync and an OpenAI key are both optional"
+        ],
+        "es": [
+          "La sincronización con Google Sheet y la clave de OpenAI son opcionales"
+        ]
+      }
+    },
+    {
+      "slug": "pawchart",
+      "name": "PawChart",
+      "color": "#8A5AC4",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.PawChart",
+      "minIOS": "17.5",
+      "android": true,
+      "category": {
+        "en": "Lifestyle",
+        "es": "Estilo de vida"
+      },
+      "tagline": {
+        "en": "A nursing chart for your pet",
+        "es": "Una hoja de cuidados para tu mascota"
+      },
+      "summary": {
+        "en": "A daily care checklist plus 13 home vitals charted over time, with a one-tap summary for the vet.",
+        "es": "Una lista diaria de cuidados y 13 signos vitales en gráficas, con un resumen para el veterinario en un toque."
+      },
+      "needs": {
+        "en": [],
+        "es": []
+      }
+    },
+    {
+      "slug": "scoredeck",
+      "name": "ScoreDeck",
+      "color": "#F2B33D",
+      "status": "dev",
+      "bundle": "com.aguach1leLabs.ScoreDeck",
+      "minIOS": "17.0",
+      "android": true,
+      "category": {
+        "en": "Sports",
+        "es": "Deportes"
+      },
+      "tagline": {
+        "en": "Live event judging and scoring",
+        "es": "Jueceo y puntuación de eventos en vivo"
+      },
+      "summary": {
+        "en": "Judge and score a live event across several devices, with no internet needed.",
+        "es": "Califica y puntúa un evento en vivo desde varios dispositivos, sin internet."
+      },
+      "needs": {
+        "en": [
+          "Devices near each other for live judging",
+          "AI banners and avatars use your own OpenAI key (optional)"
+        ],
+        "es": [
+          "Dispositivos cerca unos de otros para calificar en vivo",
+          "Los banners y avatares con IA usan tu propia clave de OpenAI (opcional)"
+        ]
+      }
+    }
+  ],
+  "worldsOrder": [
+    "yourmindspark",
+    "steadymind",
+    "mapwise",
+    "keepchallengeit",
+    "theluckynumber",
+    "sharednapkin",
+    "randosquad",
+    "criticalpath",
+    "peppertalk",
+    "fidgetlog",
+    "wanderclue",
+    "overlanded",
+    "therisetrack",
+    "pagewiser"
+  ],
+  "heroOrder": [
+    "criticalpath",
+    "yourmindspark",
+    "peppertalk",
+    "steadymind",
+    "fidgetlog",
+    "mapwise",
+    "wanderclue",
+    "keepchallengeit",
+    "overlanded",
+    "theluckynumber",
+    "therisetrack",
+    "sharednapkin",
+    "pagewiser",
+    "randosquad"
+  ]
+}

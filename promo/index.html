@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+  One promo landing page for every app. PromoVault's Instagram story screen
+  builds the link (codes, app, language all ride in the URL — see
+  docs/_shared/promo.js), so there's nothing to fill in per app and nothing
+  to republish per batch. The app's name, tagline and store link come from
+  the studio catalog (studio/apps.json). Publish once by copying docs/promo/,
+  docs/_shared/ and docs/studio/ into the Aguach1leLabs-pages repo.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Your free code</title>
+<link rel="icon" href="../studio/brand/slice-small-night.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../_shared/promo.css">
+</head>
+<body>
+<a class="promo-brand" href="../index.html"><img src="../studio/brand/lockup-night.svg" alt="Aguach1leLabs" width="152" height="24"></a>
+<img class="promo-icon" id="promo-icon" alt="">
+<h1 id="promo-name">Aguach1leLabs</h1>
+<p class="promo-about" id="promo-about" hidden></p>
+<p class="tagline" id="promo-tagline"></p>
+
+<div id="promo-host">
+  <noscript><p class="promo-error">Turn on JavaScript to see your codes.</p></noscript>
+</div>
+
+<footer><a href="../index.html">Aguach1leLabs</a> · <a href="../index.html#catalog">All our apps</a></footer>
+
+<script src="../_shared/promo.js"></script>
+</body>
+</html>
