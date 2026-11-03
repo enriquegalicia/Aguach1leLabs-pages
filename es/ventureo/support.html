@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventureo — Soporte</title>
+<!-- META:START -->
+<meta name="description" content="Ayuda y contacto de Ventureo.">
+<link rel="canonical" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/ventureo/support.html">
+<link rel="alternate" hreflang="en" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/ventureo/support.html">
+<link rel="alternate" hreflang="es" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/ventureo/support.html">
+<link rel="alternate" hreflang="x-default" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/ventureo/support.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ventureo — Soporte">
+<meta property="og:description" content="Ayuda y contacto de Ventureo.">
+<meta property="og:url" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/ventureo/support.html">
+<meta property="og:image" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/studio/icons/ventureo.png">
+<meta name="twitter:card" content="summary">
+<!-- META:END -->
+<style>
+  /* Ventureo's own page style (2026-10-19): slate paper, amber ink, not the shared template. */
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 36px 20px 56px; line-height: 1.6; color: #1E242B; background: #F2F4F6; }
+  h1 { font-size: 1.8em; font-weight: 800; margin: 0 0 0.2em; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05em; font-weight: 800; margin-top: 1.9em; color: #9A5F07; }
+  p, li { color: #38414B; }
+  ol, ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  li::marker { color: #C27C0E; }
+  strong { color: #1E242B; }
+  code { font-size: 0.9em; background: #E3E7EB; padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #6B7581; border-top: 1px solid #D5DAE0; padding-top: 1em; }
+  a { color: #9A5F07; }
+</style>
+</head>
+<body>
+<h1>Ventureo — Soporte</h1>
+
+<p>¿Necesitas ayuda con Ventureo? Escribe a <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a> y te respondo.</p>
+
+<h2>¿Necesito una clave o una Hoja de Google?</h2>
+<p>No. Eventos, contactos, calificaciones, escaneo de tarjetas y borradores de seguimiento funcionan en tu iPhone sin configurar nada. Una Hoja de Google agrega sincronización con una hoja de cálculo tuya; una clave de OpenAI agrega un lector opcional de tarjetas en la nube y otra voz para redactar.</p>
+
+<h2>¿Cómo conecto una Hoja de Google?</h2>
+<p>En Ventureo, abre <strong>Ajustes → Configura tu Hoja</strong>. Es más fácil en una computadora:</p>
+<ol>
+  <li>Crea una Hoja de Google con dos pestañas, <strong>Events</strong> y <strong>Contacts</strong>. Los nombres van tal cual, en inglés. La app copia por ti la fila de encabezados de cada pestaña.</li>
+  <li>En la Hoja, abre <strong>Extensiones → Apps Script</strong> y pega el script de Ventureo. Toca <strong>Enviar el script a tu computadora</strong> en la app para mandártelo por correo o AirDrop.</li>
+  <li>Elige <code>setup</code> en el menú de funciones y presiona <strong>Ejecutar</strong> (Run). Google te pide autorizarlo, porque es tu propio script en tu propia cuenta. El registro muestra tu token de sincronización.</li>
+  <li><strong>Implementar → Nueva implementación → Aplicación web</strong> (Deploy → New deployment → Web app), con Ejecutar como: <em>Yo</em> (Me) y Quién tiene acceso: <em>Cualquier usuario</em> (Anyone). Copia la URL de la aplicación web (termina en <code>/exec</code>).</li>
+  <li>De vuelta en Ventureo, pega la URL y el token en <strong>Ajustes</strong>, en la sección de la Hoja, toca <strong>Guardar ajustes de sincronización</strong> y luego desliza hacia abajo en la pestaña Contactos o Eventos para sincronizar.</li>
+</ol>
+
+<h2>¿Por qué el script necesita acceso de "Cualquier usuario"?</h2>
+<p>Eso es lo que permite que tu teléfono llegue a él. Cada solicitud también debe llevar tu token de sincronización, y el script rechaza lo que no lo traiga, así que la URL por sí sola no le sirve a nadie más. Guarda el token en privado, como una contraseña.</p>
+
+<h2>"Se rechazó el token de sincronización"</h2>
+<p>El token en Ajustes no coincide con el que generó tu script. Vuelve a ejecutar <code>setup</code> en Apps Script (conserva el mismo token) y cópialo del registro.</p>
+
+<h2>Configuré mi Hoja antes de octubre de 2026 y las filas regresan en blanco</h2>
+<p>Una versión anterior del script escribía IDs en blanco. Pega el script actual desde <strong>Configura tu Hoja</strong>, vuelve a ejecutar <code>setup</code> y luego usa <strong>Implementar → Administrar implementaciones → Editar → Nueva versión</strong> (Deploy → Manage deployments → Edit → New version) para que la misma URL sirva el código nuevo.</p>
+
+<h2>El escaneo de la tarjeta se saltó un campo</h2>
+<p>Las tarjetas se leen en tu iPhone. Prueba una toma plana y bien iluminada que llene el cuadro, y corrige lo demás a mano. Si agregaste una clave de OpenAI y permitiste enviar datos de contacto a OpenAI en Ajustes, se usa en su lugar el lector en la nube, que suele leer mejor las tarjetas difíciles.</p>
+
+<h2>Algo no funciona</h2>
+<p>Manda una descripción de lo que pasó (y una captura de pantalla si puedes) a <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a>, e incluye tu versión de iOS. Por favor nunca mandes tu token de sincronización ni tu clave de OpenAI.</p>
+
+<footer><!-- BYLINE:START -->
+<a href="../../index.html">Aguach1leLabs</a>
+<!-- BYLINE:END --> · <a href="privacy.html">Política de privacidad</a> · <a href="marketing.html">Sobre Ventureo</a> · <a href="../../ventureo/support.html" hreflang="en" lang="en">English</a></footer>
+</body>
+</html>

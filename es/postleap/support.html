@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PostLeap — Soporte</title>
+<!-- META:START -->
+<meta name="description" content="Ayuda y contacto de PostLeap.">
+<link rel="canonical" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/postleap/support.html">
+<link rel="alternate" hreflang="en" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/postleap/support.html">
+<link rel="alternate" hreflang="es" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/postleap/support.html">
+<link rel="alternate" hreflang="x-default" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/postleap/support.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PostLeap — Soporte">
+<meta property="og:description" content="Ayuda y contacto de PostLeap.">
+<meta property="og:url" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/postleap/support.html">
+<meta property="og:image" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/studio/icons/postleap.png">
+<meta name="twitter:card" content="summary">
+<!-- META:END -->
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; }
+  ul, ol { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  code { font-size: 0.9em; background: #f4f4f4; padding: 1px 4px; border-radius: 3px; }
+  .tagline { font-size: 1.1em; color: #444; margin-top: 0; }
+  .closing { margin-top: 1.8em; font-style: italic; color: #444; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 1em; }
+  a { color: #D94040; }
+</style>
+</head>
+<body>
+<h1>PostLeap — Soporte</h1>
+
+<p>¿Necesitas ayuda con PostLeap? Escribe a <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a> y te respondo.</p>
+
+<h2>¿Cómo conecto una Hoja de Google?</h2>
+<p>En PostLeap, abre <strong>Ajustes → Sincronización → Configura tu Hoja</strong>. Te guía por toda la configuración, y es más fácil en una computadora:</p>
+<ol>
+  <li>Crea una Hoja de Google con tres pestañas: <strong>Posts</strong>, <strong>Guidelines</strong> y <strong>Graphics</strong>. Los nombres van tal cual, en inglés. La app copia por ti la fila de encabezados de cada pestaña.</li>
+  <li>En la Hoja, abre <strong>Extensiones → Apps Script</strong> y pega el script de PostLeap. Toca <strong>Enviar el script a tu computadora</strong> en la app para mandártelo por correo o AirDrop.</li>
+  <li>Elige <code>setup</code> en el menú de funciones y presiona <strong>Ejecutar</strong> (Run). Google te pide autorizarlo, porque es tu propio script en tu propia cuenta. El registro muestra tu token de sincronización.</li>
+  <li><strong>Implementar → Nueva implementación → Aplicación web</strong> (Deploy → New deployment → Web app), con Ejecutar como: <em>Yo</em> (Me) y Quién tiene acceso: <em>Cualquier usuario</em> (Anyone). Copia la URL de la aplicación web (termina en <code>/exec</code>).</li>
+  <li>De vuelta en PostLeap, pega la URL y el token en <strong>Ajustes → Sincronización</strong>, toca <strong>Guardar</strong> y luego desliza hacia abajo en el Calendario para sincronizar.</li>
+</ol>
+
+<h2>¿Por qué el script necesita acceso de "Cualquier usuario"?</h2>
+<p>Eso es lo que permite que tu teléfono llegue a él. Cada solicitud también debe llevar tu token de sincronización, y el script rechaza lo que no lo traiga, así que la URL por sí sola no le sirve a nadie más. Guarda el token en privado, como una contraseña.</p>
+
+<h2>"Se rechazó el token de sincronización"</h2>
+<p>El token en Ajustes → Sincronización no coincide con el que generó tu script. Vuelve a ejecutar <code>setup</code> en Apps Script (conserva el mismo token) y cópialo del registro.</p>
+
+<h2>"No se pudo leer la respuesta de la Hoja" o "revisa que sus pestañas y encabezados coincidan"</h2>
+<p>El nombre de una pestaña o un encabezado está escrito distinto a la guía de configuración. Los nombres deben coincidir exactamente, pero el orden de las columnas no importa. Si cambiaste el script, usa <strong>Implementar → Administrar implementaciones → Editar → Nueva versión</strong> (Deploy → Manage deployments → Edit → New version) para que la misma URL sirva el código nuevo.</p>
+
+<h2>Borré algo y regresó</h2>
+<p>No borres filas en la Hoja. Mejor marca <strong>Archived</strong>. Deslizar una publicación o una guía en PostLeap hace lo mismo. Si configuraste tu Hoja antes de septiembre de 2026, agrega una columna <strong>Archived</strong> a las pestañas Guidelines y Graphics y vuelve a ejecutar <code>setup</code>.</p>
+
+<h2>No aparece un cambio de alguien de mi equipo</h2>
+<p>Desliza hacia abajo en el Calendario para sincronizar. Cuando la misma publicación cambió en ambos lados, la edición más reciente gana para toda la fila. Los cambios hechos por Make u otras automatizaciones también deben actualizar la columna <code>UpdatedAt</code>, o PostLeap no los notará.</p>
+
+<h2>¿La redacción con IA necesita una clave?</h2>
+<p>Sí. Pega tu propia clave de OpenAI en <strong>Ajustes → IA</strong>. Se guarda en el Llavero de tu iPhone y se envía solo a OpenAI. Sin clave, todo lo demás sigue funcionando: cuentas, calendario, guías y sincronización.</p>
+
+<h2>¿PostLeap publica en Instagram, LinkedIn o X?</h2>
+<p>No. PostLeap redacta, aprueba y programa. La publicación ocurre desde tu Hoja, por ejemplo con un escenario de Make que publica las filas marcadas como Approved.</p>
+
+<h2>Algo no funciona</h2>
+<p>Manda una descripción de lo que pasó (y una captura de pantalla si puedes) a <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a>, e incluye tu versión de iOS. Por favor nunca mandes tu token de sincronización ni tu clave de OpenAI.</p>
+
+<footer><!-- BYLINE:START -->
+<a href="../../index.html">Aguach1leLabs</a>
+<!-- BYLINE:END --> · <a href="privacy.html">Política de privacidad</a> · <a href="../../postleap/support.html" hreflang="en" lang="en">English</a></footer>
+</body>
+</html>

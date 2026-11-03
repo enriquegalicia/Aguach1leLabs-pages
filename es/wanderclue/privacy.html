@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WanderClue — Política de privacidad</title>
+<!-- META:START -->
+<meta name="description" content="Cómo trata tus datos WanderClue.">
+<link rel="canonical" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/wanderclue/privacy.html">
+<link rel="alternate" hreflang="en" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/wanderclue/privacy.html">
+<link rel="alternate" hreflang="es" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/wanderclue/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/wanderclue/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WanderClue — Política de privacidad">
+<meta property="og:description" content="Cómo trata tus datos WanderClue.">
+<meta property="og:url" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/wanderclue/privacy.html">
+<meta property="og:image" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/studio/icons/wanderclue.png">
+<meta name="twitter:card" content="summary">
+<!-- META:END -->
+<style>
+  /* WanderClue's own page style (2026-10-16): the app's own colours, not the shared template. */
+  :root { color-scheme: dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 36px 20px 56px; line-height: 1.6; color: #F6EDE2; background: #15110D; }
+  h1 { font-size: 1.9em; font-weight: 800; margin: 0 0 0.15em; }
+  h2 { font-size: 1.05em; font-weight: 800; margin-top: 1.9em; color: #E07A2A; }
+  p, li { color: #E3D6C6; }
+  .tagline { font-size: 1.1em; font-weight: 700; color: #E07A2A; margin: 0 0 1.2em; }
+  .lede { font-size: 1.05em; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  li::marker { color: #E07A2A; }
+  strong { color: #F6EDE2; }
+  .closing { margin-top: 1.8em; color: #9C8B78; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #9C8B78; border-top: 1px solid #3A2F25; padding-top: 1em; }
+  a { color: #E07A2A; }
+</style>
+</head>
+<body>
+<h1>WanderClue — Política de privacidad</h1>
+<p><em>Última actualización: 29 de septiembre de 2026</em></p>
+
+<p>Tus misiones, tu progreso y tu bitácora se guardan solo en tu dispositivo, con SwiftData de Apple y el almacenamiento estándar de iOS. Aguach1leLabs no opera ningún servidor y no hay cuenta ni inicio de sesión: nunca recibimos ni guardamos tus datos.</p>
+
+<h2>Ubicación</h2>
+<p>WanderClue pide tu ubicación solo mientras la app está abierta ("Al usar la app") y la usa para una sola cosa: medir qué tan lejos estás de la siguiente parada de una misión, para saber cuándo llegaste. Tu ubicación se lee en tu dispositivo y nunca se transmite a ningún lado: ni a nosotros ni a nadie más. No se guarda entre sesiones y no se conserva ningún historial de dónde has estado. La app nunca pide acceso a la ubicación en segundo plano ni "Siempre". Si rechazas el permiso, todas las misiones siguen siendo jugables por completo con el botón "Revelar sin caminar" de cada parada.</p>
+
+<h2>Crear una misión donde estás</h2>
+<p>La función "Crear una búsqueda a mi alrededor" encuentra lugares cercanos con Apple Maps, que maneja el propio iOS bajo los términos de privacidad de Apple. Luego WanderClue escribe la historia y los acertijos de una de tres formas, en este orden:</p>
+<ul>
+  <li><strong>Tu propia clave de OpenAI, si agregaste una.</strong> WanderClue envía los <em>nombres</em> de los lugares elegidos, los nombres de sus calles y una etiqueta de ciudad directamente de tu dispositivo a OpenAI (HTTPS estándar). Tus coordenadas no se envían. Esto ocurre solo cuando tocas para crear una misión, con tu propia clave, y está sujeto a la política de privacidad de OpenAI; la solicitud nunca pasa por Aguach1leLabs. Tu clave se guarda solo en el Llavero de este dispositivo y puedes quitarla cuando quieras en Ajustes.</li>
+  <li><strong>Apple Intelligence, en tu iPhone.</strong> En dispositivos compatibles con Apple Intelligence activado, la misión la escribe el modelo de Apple en el dispositivo. Nada sale de tu teléfono.</li>
+  <li><strong>Plantillas integradas.</strong> Si no hay ninguna de las anteriores, WanderClue crea por sí misma acertijos sencillos de observación, por completo en tu dispositivo.</li>
+</ul>
+<p>Las dos misiones integradas, y jugar cualquier misión, no hacen ninguna llamada de red.</p>
+
+<h2>Retos de foto y de movimiento</h2>
+<p>Algunas paradas incluyen un reto de foto. WanderClue abre la cámara solo cuando tocas "Tomar la foto", y la imagen se guarda solo en tu dispositivo, en la página de esa misión en tu Bitácora. Nunca se sube, y se borra cuando borras esa entrada de la Bitácora. Siempre puedes completar un reto sin tomar la foto, y puedes rechazar por completo el acceso a la cámara.</p>
+<p>Los retos de agitar y quedarte quieto leen el sensor de movimiento de tu teléfono en el dispositivo, solo mientras ese reto está en pantalla. Nada se graba ni se envía.</p>
+
+<h2>Enviarle una misión a alguien</h2>
+<p>Puedes enviarle una misión a otra persona como archivo <code>.wanderclue</code>, por AirDrop, Mensajes, Mail o cualquier otra opción de compartir que elijas. El archivo contiene la misión en sí (su título, los lugares y sus coordenadas, la historia, los acertijos y sus respuestas) y nada sobre ti, tu ubicación o tu progreso. Solo va a donde lo mandes; Aguach1leLabs nunca lo ve.</p>
+
+<h2>Game Center</h2>
+<p>Si entraste a Game Center, WanderClue publica dos números en las tablas de puntuación de Apple después de cada misión terminada: tus puntos acumulados y cuántas paradas alcanzaste a pie. Game Center lo opera Apple bajo su política de privacidad; Aguach1leLabs no recibe nada de ahí. WanderClue funciona exactamente igual si no entras.</p>
+
+<h2>Compartir tu puntaje</h2>
+<p>El botón "Compartir tu puntaje" crea una imagen en tu dispositivo (título de la misión, ciudad, puntaje, paradas). Solo se comparte si eliges a dónde mandarla.</p>
+
+<h2>Lo que no hacemos</h2>
+<ul>
+  <li>Sin analítica ni SDK de reportes de fallos</li>
+  <li>Sin publicidad ni redes de anuncios</li>
+  <li>Sin rastreo entre apps o sitios web de otras empresas</li>
+  <li>Sin cuentas, sin registro, sin recopilar correos</li>
+  <li>Sin acceso a la red propio: las únicas solicitudes salientes son Apple Maps, Game Center (si entraste) y la solicitud a OpenAI descrita arriba, solo con tu propia clave y solo cuando eliges crear una misión</li>
+</ul>
+
+<h2>Privacidad de los menores</h2>
+<p>WanderClue está clasificada para todo público y no recopila a sabiendas información de nadie, de ninguna edad. Sí dirige a las personas a caminar a lugares públicos: los menores deben jugar con un adulto.</p>
+
+<h2>Cambios a esta política</h2>
+<p>Si esta política cambia, la versión actualizada se publicará en esta misma URL con una nueva fecha de "última actualización".</p>
+
+<h2>Contacto</h2>
+<p>Preguntas sobre esta política: <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a></p>
+
+<footer><!-- BYLINE:START -->
+<a href="../../index.html">Aguach1leLabs</a>
+<!-- BYLINE:END --> · <a href="support.html">Soporte</a> · <a href="../../wanderclue/privacy.html" hreflang="en" lang="en">English</a></footer>
+</body>
+</html>

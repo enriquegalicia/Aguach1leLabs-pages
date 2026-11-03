@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ventureo — Política de privacidad</title>
+<!-- META:START -->
+<meta name="description" content="Cómo trata tus datos Ventureo.">
+<link rel="canonical" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/ventureo/privacy.html">
+<link rel="alternate" hreflang="en" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/ventureo/privacy.html">
+<link rel="alternate" hreflang="es" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/ventureo/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://enriquegalicia.github.io/Aguach1leLabs-pages/ventureo/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ventureo — Política de privacidad">
+<meta property="og:description" content="Cómo trata tus datos Ventureo.">
+<meta property="og:url" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/es/ventureo/privacy.html">
+<meta property="og:image" content="https://enriquegalicia.github.io/Aguach1leLabs-pages/studio/icons/ventureo.png">
+<meta name="twitter:card" content="summary">
+<!-- META:END -->
+<style>
+  /* Ventureo's own page style (2026-10-19): slate paper, amber ink, not the shared template. */
+  :root { color-scheme: light; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 36px 20px 56px; line-height: 1.6; color: #1E242B; background: #F2F4F6; }
+  h1 { font-size: 1.8em; font-weight: 800; margin: 0 0 0.2em; letter-spacing: -0.01em; }
+  h2 { font-size: 1.05em; font-weight: 800; margin-top: 1.9em; color: #9A5F07; text-transform: uppercase; letter-spacing: 0.04em; }
+  p, li { color: #38414B; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 0.5em; }
+  li::marker { color: #C27C0E; }
+  strong { color: #1E242B; }
+  footer { margin-top: 3em; font-size: 0.85em; color: #6B7581; border-top: 1px solid #D5DAE0; padding-top: 1em; }
+  a { color: #9A5F07; }
+</style>
+</head>
+<body>
+<h1>Ventureo — Política de privacidad</h1>
+<p><em>Última actualización: octubre de 2026</em></p>
+
+<p>Ventureo es un CRM personal para la gente que conoces en eventos. Aguach1leLabs no opera ningún servidor para él, no hay cuenta ni inicio de sesión de Ventureo, y nunca recibimos ni guardamos tus datos. Tus espacios de trabajo, eventos, contactos, notas, calificaciones y fotos de tarjetas se guardan en tu dispositivo, con el framework SwiftData de Apple. Solo salen de tu dispositivo de las formas descritas abajo, y solo cuando las configuras.</p>
+
+<h2>Tu Hoja de Google</h2>
+<p>Si conectas un espacio de trabajo a una Hoja de Google, Ventureo envía los eventos y contactos de ese espacio a la aplicación web de Apps Script que implementaste en tu propia cuenta de Google, y los vuelve a leer de ahí. Google guarda esos datos en tu cuenta de Google y bajo sus términos. Aguach1leLabs no tiene acceso a tu Hoja, a tu script ni a tu token de sincronización.</p>
+
+<h2>Tarjetas de presentación</h2>
+<p>Cuando fotografías una tarjeta de presentación, Ventureo la lee <strong>en tu dispositivo</strong> con el framework Vision de Apple. No se envía nada a ningún lado. La foto se conserva dentro de la app con ese contacto, y se borra cuando borras el contacto.</p>
+<p>Solo si agregas tu propia clave de API de OpenAI <em>y</em> aceptas cuando Ventureo pregunta si los datos de contacto pueden ir a OpenAI, la foto de una tarjeta puede enviarse de tu dispositivo a OpenAI para leerla con más precisión. Puedes cambiar esa respuesta en Ajustes cuando quieras.</p>
+
+<h2>Borradores de seguimiento</h2>
+<p>En iPhones con Apple Intelligence, los mensajes de seguimiento los redacta el modelo de Apple en el dispositivo. Si no, Ventureo escribe un borrador sencillo desde una plantilla, en el dispositivo. Si agregaste una clave de OpenAI y aceptaste enviar datos de contacto, Ventureo puede enviar en su lugar el nombre del contacto, su puesto, su empresa, el evento, tus temas y tus notas a OpenAI para redactar el mensaje, con tu propia clave y bajo la política de privacidad de OpenAI.</p>
+
+<h2>Envíos, compartir y recordatorios</h2>
+<ul>
+  <li>Un seguimiento solo sale cuando lo envías tú, por Mail, Mensajes o la hoja de compartir.</li>
+  <li>Tocar el enlace de LinkedIn de un contacto lo abre en tu navegador o en la app de LinkedIn, como cualquier enlace.</li>
+  <li>Los recordatorios de seguimiento son notificaciones locales programadas en tu iPhone. No se nos envía nada.</li>
+</ul>
+
+<h2>Claves y tokens</h2>
+<p>Tu clave de OpenAI y el token de sincronización de cada espacio de trabajo se guardan en el Llavero de tu dispositivo. Se envían solo a OpenAI y a tu propio script, respectivamente.</p>
+
+<h2>Lo que no hacemos</h2>
+<ul>
+  <li>Sin analítica ni SDK de reportes de fallos</li>
+  <li>Sin publicidad ni redes de anuncios</li>
+  <li>Sin rastreo entre apps o sitios web de otras empresas</li>
+  <li>Sin cuentas, sin registro, sin recopilar correos</li>
+</ul>
+
+<h2>Borrar tus datos</h2>
+<p>Borrar un contacto o un evento lo elimina de tu dispositivo. Las filas que ya están en tu Hoja de Google se quedan ahí hasta que las borres. Al borrar la app se elimina todo lo guardado en el dispositivo.</p>
+
+<h2>Privacidad de los menores</h2>
+<p>Ventureo no está dirigida a menores y no recopila a sabiendas información de nadie.</p>
+
+<h2>Cambios a esta política</h2>
+<p>Si esta política cambia, la versión actualizada se publicará en esta misma URL con una nueva fecha de "última actualización".</p>
+
+<h2>Contacto</h2>
+<p>Preguntas sobre esta política: <a href="mailto:mat.enrique.galicia@gmail.com">mat.enrique.galicia@gmail.com</a></p>
+
+<footer><!-- BYLINE:START -->
+<a href="../../index.html">Aguach1leLabs</a>
+<!-- BYLINE:END --> · <a href="support.html">Soporte</a> · <a href="marketing.html">Sobre Ventureo</a> · <a href="../../ventureo/privacy.html" hreflang="en" lang="en">English</a></footer>
+</body>
+</html>

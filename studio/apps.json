@@ -1,6 +1,6 @@
 {
-  "_how": "Source of truth for the website's catalog (docs/index.html and docs/es/index.html). Edit here, then run: python3 scripts/build_catalog.py --refresh  (--refresh reads live App Store data for every bundle id from Apple's public lookup API into 'store'). status: live | soon | dev | lab. 'live' is set by --refresh when the store has the app. Never list PromoVault (internal) or RoadMind (folding into Sidequest). Apps with a 'world' entry get a planet in the Worlds section (order: worldsOrder) and orbit the Slice in the hero (order: heroOrder); their planet look lives in docs/studio/worlds.js under the same slug. Also read by PromoVault (it bundles this file and downloads the published copy to know which apps are on the App Store) and by the promo page (docs/_shared/promo.js): keep the keys refreshed, slug, name, bundle, status, tagline and store stable. 'refreshed' is stamped by --refresh.",
-  "refreshed": "2026-10-31T21:42:50Z",
+  "_how": "Source of truth for the website's catalog (the worlds on the home page, the Apps page, the early-access and wall pickers) and for the store link on each app's marketing page. Edit here, then run: python3 scripts/build_catalog.py --refresh  (--refresh reads live App Store data for every bundle id from Apple's public lookup API into 'store'). status: live | soon | dev | lab. 'live' is set by --refresh when the store has the app. Never list PromoVault (internal) or RoadMind (folding into Sidequest). Apps with a 'world' entry get a planet in the Worlds section (order: worldsOrder) and orbit the Slice in the hero (order: heroOrder); their planet look lives in docs/studio/worlds.js under the same slug. Also read by PromoVault (it bundles this file and downloads the published copy to know which apps are on the App Store) and by the promo page (docs/_shared/promo.js): keep the keys refreshed, slug, name, bundle, status, tagline and store stable. 'refreshed' is stamped by --refresh.",
+  "refreshed": "2026-11-03T15:35:23Z",
   "apps": [
     {
       "slug": "criticalpath",
@@ -635,7 +635,7 @@
           "price": 1.99,
           "formattedPrice": "$1.99",
           "currency": "USD",
-          "version": "1.0",
+          "version": "1.1",
           "minimumOsVersion": "17.5",
           "released": "2026-09-08",
           "ipad": true
@@ -647,7 +647,7 @@
           "price": 39.0,
           "formattedPrice": "$39.00",
           "currency": "MXN",
-          "version": "1.0",
+          "version": "1.1",
           "minimumOsVersion": "17.5",
           "released": "2026-09-08",
           "ipad": true
@@ -705,7 +705,7 @@
           "price": 1.99,
           "formattedPrice": "$1.99",
           "currency": "USD",
-          "version": "1.0",
+          "version": "1.1",
           "minimumOsVersion": "17.5",
           "released": "2026-09-01",
           "ipad": true
@@ -717,7 +717,7 @@
           "price": 39.0,
           "formattedPrice": "$39.00",
           "currency": "MXN",
-          "version": "1.0",
+          "version": "1.1",
           "minimumOsVersion": "17.5",
           "released": "2026-09-01",
           "ipad": true
@@ -1183,14 +1183,14 @@
     }
   ],
   "worldsOrder": [
-    "yourmindspark",
-    "steadymind",
+    "criticalpath",
     "mapwise",
+    "yourmindspark",
+    "sharednapkin",
+    "steadymind",
     "keepchallengeit",
     "theluckynumber",
-    "sharednapkin",
     "randosquad",
-    "criticalpath",
     "peppertalk",
     "fidgetlog",
     "wanderclue",
